@@ -1,0 +1,320 @@
+@font-face {
+  font-family: zumba-font;
+  src: url("fonts/zumba-fitness-official-typeface.ttf");
+}
+@font-face {
+  font-family: well_wait_free;
+  src: url("fonts/well_wait_free.otf");
+}
+
+@font-face {
+  font-family: Jolly_Lodger;
+  src: url("fonts/Jolly_Lodger.otf");
+}
+@font-face {
+  font-family: izax;
+  src: url("fonts/izax.otf");
+}
+@font-face {
+  font-family: FontAwesome-webfont;
+  src: url("fonts/FontAwesome-webfont.ttf");
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.bg_bordeux {
+  background-color: #962b26;
+}
+.bg_red {
+  background-color: #e3362d;
+}
+.font_zumba {
+  font-family: zumba-font, sans-serif;
+  text-transform: uppercase;
+}
+.text_yellow {
+  color: #d6e343;
+}
+.text_blue {
+  color: #5ba1e3;
+}
+.text_yellowborder {
+  text-shadow: 2px 0 1px #d6e343, 0px 2px 1px #d6e343, -2px 0 1px #d6e343,
+    0px -2px 1px #d6e343;
+}
+.text_blackborder {
+  text-shadow: 4px 0 1px #000, 0px 4px 1px #000, -4px 0 1px #000,
+    0px -4px 1px #000;
+}
+.text_blackborder-think {
+  text-shadow: 1px 0 1px #000, 0px 1px 1px #000, -1px 0 1px #000,
+    0px -1px 1px #000;
+}
+.text_blueborder {
+  text-shadow: 1px 0 1px #5ba1e3, 0px 1px 1px #5ba1e3, -1px 0 1px #5ba1e3,
+    0px -1px 1px #5ba1e3;
+}
+.text_yellowgreenborder {
+  text-shadow: 2px 0 1px #8c961e, 0px 2px 1px #8c961e, -2px 0 1px #8c961e,
+    0px -2px 1px #8c961e;
+}
+.text_justify {
+  text-align: justify;
+}
+
+/* _____header____________ */
+.header_title {
+  font-size: 90px;
+  font-family: well_wait_free, sans-serif;
+  margin-bottom: -6px;
+}
+h1 {
+  font-family: well_wait_free, sans-serif;
+  font-size: 42px !important;
+}
+.header__img {
+  height: 244px;
+  width: 347px;
+}
+/* --------nav--------------- */
+
+.nav_bordered {
+  border-top: 4px solid #8c961e;
+  border-bottom: 4px solid #8c961e;
+}
+.nav_item {
+  font-family: Jolly_Lodger, sans-serif;
+  font-size: 74px;
+  margin-top: -15px;
+  margin-bottom: -15px;
+}
+.nav-link {
+  color: #d6e343 !important;
+}
+.nav-link:hover {
+  color: #5ba1e3 !important;
+}
+
+/* -------section----------- */
+.section__title {
+  font-size: 55px;
+  font-family: well_wait_free, sans-serif;
+  letter-spacing: 6px;
+  padding-top: 40px;
+  margin-bottom: 40px;
+}
+.section__text {
+  font-size: 50px;
+  font-family: izax, sans-serif;
+  font-style: italic;
+  text-indent: 50px;
+  line-height: 48px;
+  letter-spacing: 8px;
+  font-weight: bold;
+}
+
+/* --------------links socials-----------------*/
+
+.social__button{
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  line-height: 120px;
+  height: 120px;
+  width: 120px;
+  position: fixed;
+  right: 5%;
+  border-radius: 15px;
+}
+.social__button:hover{
+  transform: scale(1.25);
+}
+
+.button__whatsapp {
+  bottom: 325px !important;
+  font-size: 136px;
+  color: #25D366 !important;
+  background-color: #fff;
+}
+
+.whatsapp-icon{
+transform: translateY(-8px);
+}
+
+.button__instagramm{
+  bottom: 170px !important;
+  font-size: 120px;
+  border-radius: 15px;
+  color: #fff !important;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+
+.instagramm-icon{
+  transform: translateY(-5px);
+}
+
+.button__vkontakte{
+    bottom: 20px;
+    font-size: 100px;
+    color: #fff !important;
+    background-color: #5181B8;
+
+}
+
+
+@keyframes button_animation {
+      0%, 50%, 100% {
+        transform: rotate(0deg);
+      }
+
+      10%, 30% {
+        transform: rotate(-10deg);
+      }
+
+      20%, 40% {
+        transform: rotate(10deg);
+      }
+  
+}
+
+
+/* ------------main--------- */
+
+.main__photo {
+  height: 397px;
+}
+.main__h2 {
+  font-size: 52px;
+  font-family: well_wait_free, sans-serif;
+  letter-spacing: 3px;
+  word-spacing: 12px;
+}
+.section__main_text {
+  padding-top: 25px;
+  padding-bottom: 11%;
+  margin-left: 23px;
+}
+/* ------------about------------- */
+.about__picture {
+  background-image: url(img/about_picture.png);
+  background-size: 420px;
+  background-repeat: no-repeat;
+  background-position-x: right;
+}
+.about__text {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+/* --------------what is zumba---------- */
+.what-is__picture {
+  background-image: url(img/zunba-clock.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+.what-is__link {
+  text-decoration: none;
+  color: #5ba1e3;
+}
+.what-is__end {
+  padding-bottom: 135px;
+}
+/* --------------questions----------- */
+.accordion {
+}
+.accordion-button {
+  flex-direction: row-reverse;
+  align-items: unset;
+  color: #5ba1e3 !important;
+  background-color: #e3362d !important;
+}
+
+.accordion-button::after {
+  margin-right: auto;
+  margin-left: 0px;
+  font-family: FontAwesome-webfont;
+  background-image: none;
+  content: "\f0d7";
+  font-size: 60px;
+  color: #5ba1e3;
+}
+.accordion-button:not(.collapsed) {
+  box-shadow: none !important;
+}
+.accordion-button:not(.collapsed)::after {
+  background-image: none;
+  content: "\f0d8";
+  transform: none;
+  margin-top: -2px;
+  font-size: 60px;
+  color: #5ba1e3;
+}
+.accordion-button:focus {
+  outline: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+.accordion-button span {
+  width: 100%;
+  margin-left: 15px;
+}
+.accordion-item {
+  border: none !important;
+  margin-bottom: 30px;
+}
+.accordion-body {
+  padding-bottom: 0;
+  padding-top: 0px;
+  padding-right: 39px;
+  line-height: 25px;
+}
+.questions__end {
+  padding-bottom: 135px;
+  margin-bottom: 0;
+}
+
+/* --------reviews------------- */
+
+.carousel-inner {
+  margin-left: 150px;
+  width: 78%;
+}
+.carousel__photo {
+  width: 150px;
+  border-radius: 75px;
+}
+
+
+/* --------some-more--------- */
+
+.some-more__video{
+  text-align: center;
+  margin-top: 50px;
+  padding-bottom: 50px;
+}
+
+/* ------final section----- */
+
+.section__final{
+  padding-bottom: 30px;
+}
+
+/* ------footer--------- */
+.footer{
+  font-family: well_wait_free, sans-serif;
+  font-size: 20px;
+  letter-spacing: 2px;
+  border-top: 4px solid #8c961e;
+  padding-top: 15px;
+}
+.footer__text{
+  margin-bottom: 0;
+}
+.footer__mail{
+  font-size: 25px;
+  letter-spacing: 5px;
+}
