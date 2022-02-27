@@ -14,7 +14,8 @@
     и как попасть к ней на тренировку, чтобы заниматься спортом в соё удовольствие">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style_mediaqueries.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
         integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -23,21 +24,18 @@
     <header class="header bg_bordeux">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-3"><img class="header__img" src="img/header_logo.png" alt="Логотип"></div>
+                <div class="col-2"><img class="header__img" src="img/header_logo.png" alt="Логотип"></div>
                 <div class="col text_yellowborder">
-                    <div class="row header_title text-center">
-                        <div class="col"><span class="col-2 font_zumba">Zumba &nbsp;</span> с нашей Наташей</div>
-                    </div>
-                    <div class="row d-none d-md-block">
-                        <div class="col text-center"><h1>Персональнй сайт лицензированного ZUMBA-инструктора Наталии Смирновой</h1></div>
-                    </div>
+                        <div class="header__title text-center">
+                            <span class="font_zumba">Zumba &nbsp;</span> с нашей Наташей</div>
+                        <div class="d-none d-md-block text-center header__description">Персональнй сайт лицензированного ZUMBA-инструктора Наталии Смирновой</div>
                 </div>
             </div>
         </div>
     </header>
     <nav class="bg_bordeux nav_bordered">
         <div class="container">
-            <ul class="nav justify-content-between text_blackborder">
+            <ul class="nav justify-content-around jus text_blackborder">
                 <li class="nav_item"><a class="nav-link" href="#about">Обо мне</a></li>
                 <li class="nav_item"><a class="nav-link" href="#what-is">Что такое ZUMBA?</a></li>
                 <li class="nav_item"><a class="nav-link" href="#questions">Вопросы</a></li>
@@ -48,7 +46,7 @@
     <main class="main">
 
         <!-- links -->
-        
+        <div class="social-wrapper d-none d-md-block">
             <!-- whats-app -->
             <a class="social__button button__whatsapp" href="https://api.whatsapp.com/send?phone=79046385924" target="_blank" title="Написать в Whatsapp">
                 <i class="fab fa-whatsapp whatsapp-icon"></i>
@@ -61,25 +59,19 @@
             <a class="social__button button__vkontakte" href="https://vk.com/natali_zumzum" target="_blank" title="Группа Вконтакте">
                 <i class="fab fa-vk vkontakte-icon"></i>
             </a>
-        
+        </div>
         <!-- links -->
 
         <section class="section__main bg_bordeux" id="main">
             <div class="container">
-                <div class="row">
-                    <div class="col section__title text_blackborder text_yellow text-center">Спорт? Развлечение? Общение?</div>
-                </div>
-                <div class="row">
-                    <div class="col-3">
+                <div class="section__title text_blackborder text_yellow text-center">Спорт? Развлечение? Общение?</div>
+                <div class="row section__main_inner">
+                    <div class="col-3 d-none d-lg-block">
                         <img class="main__photo" src="img/main_image.png" alt="Фото 1">
                     </div>
-                    <div class="col">
-                        <div class="row">
-                            <div class="col main__h2 text_blue text_blackborder text-center">Ответ один - всё это <br><span class="font_zumba text_yellow">Zumba!!!</span></div>
-                        </div>
-                        <div class="row">
-                            <div class="col text_yellow section__text section__main_text text_justify">Отдохнуть или потрудиться, посмеяться или попотеть, зарядиться энергией или сбросить груз бытовых проблем - совершенно неважно с какой целью ты придёшь на эти занятия! Самое главное, что уйдешь ты с приятной легкостью в теле и улыбкой!</div>
-                        </div>
+                    <div class="col section__main_description">
+                        <div class="main__answer text_blue text_blackborder text-center">Ответ один - всё это <br><span class="font_zumba text_yellow">Zumba!!!</span></div>
+                        <div class="text_yellow section__text section__main_text text_justify">Отдохнуть или потрудиться, посмеяться или попотеть, зарядиться энергией или сбросить груз бытовых проблем - совершенно неважно с какой целью ты придёшь на эти занятия! Самое главное, что уйдешь ты с приятной легкостью в теле и улыбкой!</div>
                     </div>
                 </div>
             </div>
@@ -244,7 +236,7 @@
                     Это образ жизни! Это безудржное веселье и заряд позитива каждый день!</p>
                 </div>
                 <div class="some-more__video">
-                    <iframe src="https://vk.com/video_ext.php?oid=-188984961&id=456239025&hash=db7c5b07bf42bbf3" width="640" height="360" frameborder="0" allowfullscreen="1" allow="autoplay; encrypted-media; fullscreen; picture-in-picture">iframe не поддерживается((((</iframe> 
+                    <iframe src="https://vk.com/video_ext.php?oid=-188984961&id=456239025&hash=db7c5b07bf42bbf3"  frameborder="0" allowfullscreen="1" allow="autoplay; encrypted-media; fullscreen; picture-in-picture">iframe не поддерживается((((</iframe> 
 				    <noframes>Ваш браузер не поддерживает фрэймы! Очень жаль)))</noframes>
                 </div>
             </div>

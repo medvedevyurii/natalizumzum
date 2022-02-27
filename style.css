@@ -20,10 +20,6 @@
   src: url("fonts/FontAwesome-webfont.ttf");
 }
 
-/* @media(max-width: 1560px) {
-  html {
-    font-size: 18px;
-  } */
 
 html,
 body {
@@ -74,14 +70,14 @@ body {
 
 /*-----------header------------ */
 
-.header_title {
-  font-size: 5vw;
+.header__title {
+  font-size: 4vw;
   font-family: well_wait_free, sans-serif;
   margin-bottom: -6px;
 }
-h1 {
+.header__description {
   font-family: well_wait_free, sans-serif;
-  font-size: 2.5vw !important;
+  font-size: 1.7vw !important;
 }
 .header__img {
   width: 100%;
@@ -94,9 +90,9 @@ h1 {
 }
 .nav_item {
   font-family: Jolly_Lodger, sans-serif;
-  font-size: max(50px, 5.3vw);
-  margin-top: -15px;
-  margin-bottom: -15px;
+  font-size: 3vw;
+  margin-top: -10px;
+  margin-bottom: -10px;
 }
 .nav-link {
   color: #d6e343 !important;
@@ -106,6 +102,7 @@ h1 {
 }
 
 /* -------section----------- */
+
 .section__title {
   font-size: 55px;
   font-family: well_wait_free, sans-serif;
@@ -114,34 +111,40 @@ h1 {
   margin-bottom: 40px;
 }
 .section__text {
-  font-size: 50px;
+  font-size: 35px;
   font-family: izax, sans-serif;
   font-style: italic;
   text-indent: 50px;
   line-height: 48px;
-  letter-spacing: 8px;
+  letter-spacing: 4px;
   font-weight: bold;
 }
 
+
 /* --------------links socials-----------------*/
 
+.social-wrapper{
+  position: fixed;
+  right: 15px;
+  bottom:50px;
+
+}
+
 .social__button{
-  display: inline-block;
-  vertical-align: middle;
+  /* vertical-align: middle; */
   text-align: center;
   line-height: 60px;
   height: 60px;
   width: 60px;
-  position: fixed;
-  right: 15px;
+  display: block;
   border-radius: 15px;
+  margin-top: 10px;
 }
 .social__button:hover{
   transform: scale(1.25);
 }
 
 .button__whatsapp {
-  bottom: 180px !important;
   font-size: 50px;
   color: #fff !important;
   background-color: #25D366;
@@ -152,7 +155,6 @@ transform: translateY(-3px);
 }
 
 .button__instagramm{
-  bottom: 100px !important;
   font-size: 55px;
   border-radius: 15px;
   color: #fff !important;
@@ -164,7 +166,6 @@ transform: translateY(-3px);
 }
 
 .button__vkontakte{
-    bottom: 20px;
     font-size: 45px;
     color: #fff !important;
     background-color: #5181B8;
@@ -193,7 +194,7 @@ transform: translateY(-3px);
 .main__photo {
   height: 397px;
 }
-.main__h2 {
+.main__answer {
   font-size: 52px;
   font-family: well_wait_free, sans-serif;
   letter-spacing: 3px;
@@ -300,7 +301,18 @@ transform: translateY(-3px);
 .some-more__video{
   text-align: center;
   margin-top: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 56.25%;
+  position: relative;
+  overflow: hidden;
+  height: 0;
+}
+
+.some-more__video iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 /* ------final section----- */
