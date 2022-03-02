@@ -8,9 +8,6 @@
 }
 
 @media(max-width:768px) {
-    .section__title {
-        font-size: 30px;
-    }
 
     .section__text {
         font-size: 20px;
@@ -30,7 +27,7 @@
     .section__main_description::after {
         content: "";
         background: url("img/main_image.png");
-        background-size: 50vh;
+        background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
         opacity: 0.15;
@@ -40,6 +37,49 @@
         right: 0;
         position: absolute;
         z-index: 1;
+        margin-bottom: 5px;
     }
+
+    .about__text {
+        position: relative;
+    }
+
+    .section__about_description::after {
+        content: "";
+        background: url("img/about_picture.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        opacity: 0.15;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: 1;
+        margin-bottom: 5px;
+    }
+
+    .what-is__inner{
+        position: relative;
+    }
+
+
+    .what-is__description:after {
+        content: "";
+        background: url("img/zumba-clock.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        opacity: 0.15;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: 1;
+        margin-bottom: 5px;
+    }
+
 
 }

@@ -104,11 +104,11 @@ body {
 /* -------section----------- */
 
 .section__title {
-  font-size: 55px;
+  font-size: 4vw;
   font-family: well_wait_free, sans-serif;
   letter-spacing: 6px;
-  padding-top: 40px;
-  margin-bottom: 40px;
+  padding-top: 2vw;
+  margin-bottom: 2vw;
 }
 .section__text {
   font-size: 35px;
@@ -127,6 +127,7 @@ body {
   position: fixed;
   right: 15px;
   bottom:50px;
+  z-index: 5;
 
 }
 
@@ -173,7 +174,7 @@ transform: translateY(-3px);
 }
 
 
-@keyframes button_animation {
+/* @keyframes button_animation {
       0%, 50%, 100% {
         transform: rotate(0deg);
       }
@@ -186,7 +187,7 @@ transform: translateY(-3px);
         transform: rotate(10deg);
       }
   
-}
+} */
 
 
 /* ------------main--------- */
@@ -195,31 +196,31 @@ transform: translateY(-3px);
   height: 397px;
 }
 .main__answer {
-  font-size: 52px;
+  font-size: 3.7vw;
   font-family: well_wait_free, sans-serif;
   letter-spacing: 3px;
   word-spacing: 12px;
 }
 .section__main_text {
-  padding-top: 25px;
-  padding-bottom: 11%;
+  padding-top: 1.8vw;
+  padding-bottom: 5vw;
   margin-left: 23px;
 }
 /* ------------about------------- */
 .about__picture {
   background-image: url(img/about_picture.png);
-  background-size: 420px;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position-x: right;
+  background-position-y:center ;
 }
 .about__text {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 2.1vw;
 }
 /* --------------what is zumba---------- */
 .what-is__picture {
-  background-image: url(img/zunba-clock.png);
-  background-size: 100%;
+  background-image: url(img/zumba-clock.png);
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: left;
 }
@@ -227,12 +228,9 @@ transform: translateY(-3px);
   text-decoration: none;
   color: #5ba1e3;
 }
-.what-is__end {
-  padding-bottom: 135px;
-}
+
 /* --------------questions----------- */
-.accordion {
-}
+
 .accordion-button {
   flex-direction: row-reverse;
   align-items: unset;
@@ -241,30 +239,32 @@ transform: translateY(-3px);
 }
 
 .accordion-button::after {
-  margin-right: auto;
-  margin-left: 0px;
-  font-family: FontAwesome-webfont;
-  background-image: none;
-  content: "\f0d7";
-  font-size: 60px;
-  color: #5ba1e3;
+  display: block;
+  border-left:1.4vw solid transparent ;
+  border-right:1.4vw solid transparent;
+  border-bottom:1.4vw solid transparent;
+  border-top:1.4vw solid #5ba1e3;
+  background-color: transparent;
+  margin-top: 1vw;
+  transition: border-color 0.3s ease-in-out;
 }
+
 .accordion-button:not(.collapsed) {
   box-shadow: none !important;
-}
+} 
+
 .accordion-button:not(.collapsed)::after {
-  background-image: none;
-  content: "\f0d8";
-  transform: none;
-  margin-top: -2px;
-  font-size: 60px;
-  color: #5ba1e3;
+    border-top:1.4vw solid transparent;
+    border-bottom:1.4vw solid #5ba1e3;
+    transform: none !important;
+    margin-top: 0;
 }
+
 .accordion-button:focus {
   outline: none !important;
   border: none !important;
   box-shadow: none !important;
-}
+} 
 .accordion-button span {
   width: 100%;
   margin-left: 15px;
@@ -324,7 +324,7 @@ transform: translateY(-3px);
 /* ------footer--------- */
 .footer{
   font-family: well_wait_free, sans-serif;
-  font-size: 20px;
+  font-size: 1.5vw;
   letter-spacing: 2px;
   border-top: 4px solid #8c961e;
   padding-top: 15px;
@@ -333,6 +333,6 @@ transform: translateY(-3px);
   margin-bottom: 0;
 }
 .footer__mail{
-  font-size: 25px;
+  font-size: 1.2vw;
   letter-spacing: 5px;
 }
