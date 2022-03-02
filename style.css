@@ -104,14 +104,14 @@ body {
 /* -------section----------- */
 
 .section__title {
-  font-size: 6vw;
+  font-size: 4vw;
   font-family: well_wait_free, sans-serif;
   letter-spacing: 6px;
   padding-top: 2vw;
   margin-bottom: 2vw;
 }
 .section__text {
-  font-size: 5vw;
+  font-size: 3vw;
   font-family: izax, sans-serif;
   font-style: italic;
   text-indent: 50px;
@@ -132,7 +132,6 @@ body {
 }
 
 .social__button{
-  /* vertical-align: middle; */
   text-align: center;
   line-height: 60px;
   height: 60px;
@@ -141,13 +140,21 @@ body {
   border-radius: 15px;
   margin-top: 10px;
 }
+
 .social__button:hover{
   transform: scale(1.25);
 }
 
+.button__up{
+  font-size: 50px;
+  color: rgb(182, 104, 26) !important;
+  background-color: #ffffff;
+  transform: none !important;
+}
+
 .button__whatsapp {
   font-size: 50px;
-  color: #fff !important;
+  color: rgb(255, 255, 255) !important;
   background-color: #25D366;
 }
 
@@ -180,7 +187,7 @@ transform: translateY(-3px);
   height: 397px;
 }
 .main__answer {
-  font-size: 3.7vw;
+  font-size: 3vw;
   font-family: well_wait_free, sans-serif;
   letter-spacing: 3px;
   word-spacing: 12px;
@@ -305,10 +312,44 @@ transform: translateY(-3px);
   padding-bottom: 2vw;
 }
 
+.final__social {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.final-social__button {
+  text-align: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 5px;
+}
+
+.final-button__whatsapp {
+  font-size: 40px;
+  line-height: 44px;
+  color: rgb(255, 255, 255) !important;
+  background-color: #25D366;
+}
+
+.final-button__instagramm {
+  font-size: 40px;
+  line-height: 42px;
+  color: #fff !important;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+
+.final-button__vkontakte {
+  font-size: 30px;
+  line-height: 40px;
+  color: #fff !important;
+  background-color: #5181B8;
+
+}
+
 /* ------footer--------- */
 .footer{
   font-family: well_wait_free, sans-serif;
-  font-size: 1.5vw;
+  font-size: 1.2vw;
   letter-spacing: 2px;
   border-top: 4px solid #8c961e;
   padding-top: 1vw;
@@ -318,6 +359,9 @@ transform: translateY(-3px);
   margin-bottom: 0;
 }
 .footer__mail{
-  font-size: 1.2vw;
+  font-size: 1.5vw;
   letter-spacing: 5px;
 }
+
+
+
