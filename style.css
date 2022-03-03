@@ -91,8 +91,6 @@ body {
 .nav_item {
   font-family: Jolly_Lodger, sans-serif;
   font-size: 3vw;
-  margin-top: -10px;
-  margin-bottom: -10px;
 }
 .nav-link {
   color: #d6e343 !important;
@@ -118,6 +116,7 @@ body {
   line-height: 48px;
   letter-spacing: 4px;
   font-weight: bold;
+  margin-right:max(2%, 50px);
 }
 
 
@@ -129,6 +128,12 @@ body {
   bottom:50px;
   z-index: 5;
 
+}
+.social-wrapper_small{
+  position: fixed;
+  right: 2px;
+  bottom:2px;
+  z-index: 5;
 }
 
 .social__button{
@@ -150,6 +155,18 @@ body {
   color: rgb(182, 104, 26) !important;
   background-color: #ffffff;
   transform: none !important;
+}
+.button__up_small{
+  font-size: 20px;
+  color: rgb(182, 104, 26) !important;
+  background-color: #ffffff;
+  transform: none !important;
+  text-align: center;
+  line-height: 40px;
+  height: 40px;
+  width: 40px;
+  display: block;
+  border-radius: 15px;
 }
 
 .button__whatsapp {
@@ -184,7 +201,10 @@ transform: translateY(-3px);
 /* ------------main--------- */
 
 .main__photo {
-  height: 397px;
+  width: 100%;
+}
+.main__photo-wrapper{
+  margin: auto;
 }
 .main__answer {
   font-size: 3vw;
@@ -192,6 +212,11 @@ transform: translateY(-3px);
   letter-spacing: 3px;
   word-spacing: 12px;
 }
+
+/* .section__main_inner{
+  margin-right:max(2%, 30px);
+} */
+
 .section__main_text {
   padding-top: 1.8vw;
   padding-bottom: 5vw;
