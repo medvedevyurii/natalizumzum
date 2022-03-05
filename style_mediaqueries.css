@@ -1,9 +1,4 @@
-/* 
-@media(max-width:576px) {
-    .nav_item {
-        font-size: 20px;
-    }
-} */
+
 
 @media(min-width:1600px) {
     .container{
@@ -18,6 +13,10 @@
 }
 
 @media(max-width:768px) {
+    .header__title{
+        font-size: max(33px, 6vw);
+    }
+
     .nav_item {
         font-size: 28px;
         margin-bottom: -5px;
@@ -25,7 +24,7 @@
     }
 
     .section__text {
-        font-size: 20px;
+        font-size: 24px;
         text-indent: 30px;
         line-height: 25px;
         letter-spacing: 2px;
@@ -90,5 +89,16 @@
         position: absolute;
         z-index: 1;
         margin-bottom: 5px;
+    }
+
+    .accordion-button::after{
+        margin-top: 0.5em;
+    }
+
+    .footer{
+        font-size: 14px;
+    }
+    .footer__mail{
+        font-size: 14px;
     }
 }
